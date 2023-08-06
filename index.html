@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            /*
+            let numberInput = prompt('Please enter a number');
+            let sum = 0;
+            if(isNaN(numberInput)){
+                alert('Invalid input, enter a number');
+            }else{
+            for (let i = 0; i < numberInput.length; i++){
+                let digit= parseInt(numberInput[i]);
+                sum += digit;
+            }{alert(`The sum of your digits is ${sum}`)}
+            }
+            */
+            
+
+
+
+            /*
+            let minNumber=parseInt(prompt('Please enter a min number'));
+            let maxNumber=parseInt(prompt('Please enter a max number'));
+            let result='';
+            if (isNaN(minNumber)|| isNaN(maxNumber)|| minNumber===null || maxNumber===null) {
+                alert('Please enter valid numbers');
+            }else if(minNumber>maxNumber){
+                alert('Please make sure min number is smaller than max number');
+            }
+            else{
+             for(let i = minNumber; i <= maxNumber; i++) {
+                if (i % 2 !== 0) continue;
+                result+= i + ' , ';
+             }
+             alert(result);
+            }
+            */
+             
+             
+
+
+            /*
+            let inputNumber =parseInt(prompt('Please enter a number'));
+            let row='';
+            for(let i = 0;i < inputNumber; i++ ){
+                 for (let j = 0; j < inputNumber; j++){
+                    row+='* ';
+                 }   
+                 row += "\n";  
+                }   alert(row);   
+            */ 
+
+
+            
+            function pow(base,exponent){
+               return Math.pow(base,exponent);
+            }
+            let baseInput=parseInt(prompt('Please enter a base'));
+            let exponentInput=parseInt(prompt('Please enter an exponent'));
+            if (Number.isInteger(baseInput)&& Number.isInteger(exponentInput) && baseInput >= 1 && exponentInput >= 1){
+                let result = pow(baseInput, exponentInput);
+                alert(`The result is ${result}`)
+            }else{
+                alert('Invalid input, please enter only natural numbers above 0');
+            }
+            
+
+
+
+        </script>
+    </body>
+</html>
